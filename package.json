@@ -1,0 +1,35 @@
+{
+  "name": "wintu_hp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --output-public-path=/test_build/ --historyApiFallback --config webpack/webpack.config.dev.js",
+    "build": "webpack -w --config webpack/webpack.config.dev.js",
+    "dist": "webpack --config webpack/webpack.config.prod.js"
+  },
+  "author": "wintu",
+  "license": "ISC",
+  "dependencies": {
+    "bulma-stylus": "^0.4.0",
+    "md5": "^2.2.1",
+    "vue": "^2.5.16",
+    "vue-cookies": "^1.5.6",
+    "vue-particles": "^1.0.9",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-loader": "^15.0.6",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
